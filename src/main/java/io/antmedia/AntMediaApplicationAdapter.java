@@ -1469,6 +1469,7 @@ public Result createInitializationProcess(String appName){
 		appSettings.setJwtSecretKey(newSettings.getJwtSecretKey());
 		
 		appSettings.setGeneratePreview(newSettings.isGeneratePreview());
+		appSettings.setDashHttpEndpoint(newSettings.getDashHttpEndpoint());
 		
 		logger.warn("app settings updated for {}", getScope().getName());	
 	}
